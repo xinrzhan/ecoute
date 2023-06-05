@@ -59,7 +59,7 @@ class GPTResponder:
                         print("Failed to retrieve translation. Check the API response structure.")
                         
                         
-                    response =  response + "\n Chinese:" + translation
+                    response =  response + "\n" +target_language.__str__()+": " + translation
                 
                 end_time = time.time()  # Measure end time
                 execution_time = end_time - start_time  # Calculate the time it took to execute the function
